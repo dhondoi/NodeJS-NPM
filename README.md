@@ -56,6 +56,19 @@ Yang menarik dari fitur export ini, kita bisa membuat alias ketika mengekspos fi
     "./write": "./write.js"
   }
 ```
+
 ```js
 import { writeToFile } from "nodejs-npm/write";
+```
+
+## dependency management
+
+Secara default, NPM akan download dependency dari website https://www.npmjs.com/
+Kita bisa mencari open source package atau membuat open source package disana jika kita mau
+Atau bisa langsung tulis di dependencies di `package.json`
+
+Untuk menginstall dependency, kita bisa gunakan perintah (contoh) :
+
+```cmd
+npm install lodash
 ```
