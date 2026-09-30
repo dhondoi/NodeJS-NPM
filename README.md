@@ -22,3 +22,22 @@ tambahkan pada `package.json`
 ```json
 "type": "module"
 ```
+
+## script
+
+Script di package.json terdapat beberapa yang spesial atau khusus
+Contoh special script yaitu : `start`, `stop`, `test`, `restart`, `uninstall`, `version`, dan lain-lain
+Selain itu, terdapat script spesial untuk script diatas, kita bisa gunakan gunakan prefix `pre` sebagai script yang akan dijalankan sebelumnya, dan prefix `post` sebagai script yang dijalankan setelahnya
+Misal ketika kita gunakan perintah npm start, maka akan menjalankan script prestart, start dan poststart
+
+```json
+    "prestart": "echo 'sebelum start'",
+    "start": "node index.js",
+    "poststart": "echo 'sesudah start'",
+```
+
+ketikan perintah
+
+```cmd
+npm start
+```
