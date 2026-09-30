@@ -11,5 +11,9 @@
   },
   "author": "Doni Firmansyah",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./write": "./write.js"
+  }
 }

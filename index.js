@@ -1,4 +1,4 @@
-import { writeToFile } from "./write.js";
+import { writeToFile } from "nodejs-npm/write";
 
 const say = "Hello NPM";
 

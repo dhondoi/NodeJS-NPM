@@ -41,3 +41,21 @@ ketikan perintah
 ```cmd
 npm start
 ```
+
+## export module
+
+Pada kasus ketika kita membuat library yang akan digunakan di banyak project, baru attribute main ini akan terlihat kegunaanya
+Problem ketika kita menggunakan attribute main adalah, kita cuma bisa mengekspos satu file JS, oleh karena itu penggunaan attribute main sebenarnya sudah tidak direkomendasikan lagi
+Sebagai penggantinya, terdapat attribute export yang bisa digunakan sebagai konfigurasi untuk mengekspos file JS
+Yang menarik dari fitur export ini, kita bisa membuat alias ketika mengekspos file JS, sehingga tidak perlu menggunakan nama file JS aslinya
+
+```json
+"type": "module",
+"exports": {
+    ".": "./index.js",
+    "./write": "./write.js"
+  }
+```
+```js
+import { writeToFile } from "nodejs-npm/write";
+```
