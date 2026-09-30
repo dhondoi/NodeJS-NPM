@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-npm",
+  "version": "1.0.0",
+  "description": "Mengenal Node Package Manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Doni Firmansyah",
+  "license": "ISC"
+}
