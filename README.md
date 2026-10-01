@@ -95,3 +95,24 @@ Download versi 1.1.1, jika ada update, lakukan update, namun hanya update jika P
 
 ^1.1.1
 Download versi 1.1.1, jika ada update, lakukan update, namun hanya update jika MINOR dan PATCH berubah
+
+## development dependency
+
+Untuk menambah development dependency, kita bisa tambahkan di bagian devDependencies di package.json
+Atau gunakan perintah :
+
+```cmd
+npm install namapackage --save-dev
+```
+
+Untuk download dependency, sama seperti download production dependency, kita bisa gunakan perintah :
+
+```cmd
+npm install
+```
+
+Ada baiknya, ketika kita mau jalankan aplikasi di production, kita tidak perlu menginstall development dependency, caranya kita bisa gunakan perintah:
+
+```cmd
+npm install --production
+```
