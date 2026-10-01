@@ -72,3 +72,26 @@ Untuk menginstall dependency, kita bisa gunakan perintah (contoh) :
 ```cmd
 npm install lodash
 ```
+
+## dependency version
+
+Versi
+Keterangan
+
+x
+Download versi terbaru dan update ke versi terbaru walaupun MAJOR berubah
+
+1.x
+Download versi 1 terbaru, update ke versi terbaru, tapi MAJOR tetap di 1
+
+1.1.x
+Download versi 1.1 terbaru, update ke versi terbaru, tapi MAJOR dan MINOR tetap di 1.1
+
+1.1.1
+Selalu download versi 1.1.1, tidak akan update walaupun ada versi baru
+
+~1.1.1
+Download versi 1.1.1, jika ada update, lakukan update, namun hanya update jika PATCH berubah
+
+^1.1.1
+Download versi 1.1.1, jika ada update, lakukan update, namun hanya update jika MINOR dan PATCH berubah
